@@ -28,3 +28,40 @@ const myFunction=function(){
 }
 // for knowing the type of datatype:
 console.log(typeof id);
+
+
+
+
+
+// --------------------------------------------
+
+
+/* Memory 2 types:- 
+Stack (primmitive), Heap(non-primitive_)
+
+in stack we get the copy of the that reference
+and in heap we get the original reference
+
+*/
+
+let name='shreejoy'
+
+let anothername = name
+anothername='messhu'
+
+console.log(anothername);
+console.log(name);
+
+
+let user1={
+    email:'google.com',
+    upi:'user1@ybl'
+}
+
+let user2=user1
+
+user2.email='user2@google.com'
+
+console.log(user1.email);
+console.log(user2.email);
+console.log(user1)
